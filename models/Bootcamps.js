@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const BootcampShema = new mongoose.Schema({
+const BootcampSchema = new mongoose.Schema({
     name: {
         type: String,
         required: [true, "Please add a name"],
@@ -55,7 +55,7 @@ const BootcampShema = new mongoose.Schema({
     country: String
     },
     careers: {
-        // Array of strings
+        // Array of stringsmongodb+srv://akhmadillo1:challenger04@mycluster.znydwhd.mongodb.net/
         type: [String],
         required: true,
         enum: [
