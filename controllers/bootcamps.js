@@ -79,7 +79,7 @@ exports.createBootcamp = asyncHandler(async (req, res, next) => {
     res.status(201).json({success: true, data: bootcamp})
     }
 )
-// @desc    Get a new bootcamp
+// @desc    Get a bootcamp
 // @route   GET api/v1/bootcamps/:id
 // @access  Public
 exports.getBootcamp = asyncHandler(async (req, res, next) => {
