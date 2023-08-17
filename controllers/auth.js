@@ -2,8 +2,6 @@ const User = require('../models/User')
 const ErrorResponse = require('../utils/errorResponse')
 const asyncHandler = require('../middleware/async')
 const { parse } = require('dotenv')
-const { Error } = require('mongoose')
-
 
 // @desc    Register User
 // @route   POST api/v1/auth/register
@@ -68,3 +66,16 @@ const sendTokenResponse = (user, statusCode, res) => {
     .cookie('token', token, options)
     .json({success: true, token})
 }
+
+// @desc    Get current logged in user
+// @route   Get api/v1/auth/me
+// @access  Prive
+
+exports.getMe = asyncHandler(async(req, res, next) => {
+    const user = await User.findById(req.user.id)
+
+    res.status(200).json({
+        success: true,
+        data: user
+    });
+});
