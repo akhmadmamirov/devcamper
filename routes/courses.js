@@ -16,7 +16,12 @@ const advancedResults = require('../middleware/advancedResults')
 const { protect, authorize } = require('../middleware/auth')
 
 router.route('/')
-.get(advancedResults(Course, {path: 'bootcamp', select: 'name description'}), getCourses)
+.get(advancedResults(Course, 
+    {
+        path: 'bootcamp', 
+        select: 'name description'
+    }), getCourses)
+    
 .post(protect, authorize('publisher', 'admin'), addCourse)
 
 router.route('/:id')
