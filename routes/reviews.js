@@ -3,7 +3,8 @@ const Review = require('../models/Review')
 
 const {
     getReviews,
-    getReview
+    getReview,
+    addReview
 } = require('../controllers/reviews') 
 
 const router = express.Router({mergeParams: true})
@@ -18,6 +19,7 @@ router.route('/')
         select: 'name description'
     }), 
     getReviews)
+.post(protect, authorize('user', 'adming'), addReview)
 
 router.route('/:id').get(getReview)
 
