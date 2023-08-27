@@ -9,8 +9,8 @@ const errorHandler = require('./middleware/error')
 const fileUpload = require('express-fileupload')
 const cookieParser = require('cookie-parser')
 const mongoSanitize = require('express-mongo-sanitize');
-const helmet = require('helmet')
-const xss = require('xss-clean')
+// const helmet = require('helmet')
+// const xss = require('xss-clean')
 const rateLimit = require('express-rate-limit')
 const hpp = require('hpp')
 const cors = require('cors')
@@ -48,10 +48,10 @@ app.use(fileUpload())
 app.use(mongoSanitize());
 
 //Set security headers
-app.use(helmet())
+// app.use(helmet())
 
 //Prevent XSS headers
-app.use(xss())
+// app.use(xss())
 
 //Rate Limiting
 const limiter = rateLimit({
