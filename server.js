@@ -8,7 +8,9 @@ const colors = require('colors');
 const errorHandler = require('./middleware/error')
 const fileUpload = require('express-fileupload')
 const cookieParser = require('cookie-parser')
-
+const mongoSanitize = require('express-mongo-sanitize');
+const helmet = require('helmet')
+const xss = require('xss-clean')
 
 //Route Files
 const bootcamps = require('./routes/bootcamps')
@@ -38,6 +40,16 @@ if (process.env.NODE_ENV === 'development'){
 
 //File Uploader
 app.use(fileUpload())
+
+//Sanitize User
+// To remove data using these defaults:
+app.use(mongoSanitize());
+
+//Set security headers
+app.use(helmet())
+
+//Prevent XSS headers
+app.use(xss())
 
 //Set Static folder
 app.use(express.static(path.join(__dirname, 'public')))
