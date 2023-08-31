@@ -91,6 +91,8 @@ This backend API fulfills the following requirements:
 
 For detailed instructions and usage examples, consult the documentation provided in the HTML files.
 
+## Credits to:
+1. Brad Traversy: Founder of Traversy Media
 ---
 
 Explore the capabilities of the DevCamper Backend API and contribute to its development. If you have questions or suggestions, please reach out.
