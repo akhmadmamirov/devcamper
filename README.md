@@ -87,6 +87,7 @@ This backend API fulfills the following requirements:
 2. Install dependencies.
 3. Set up environment variables.
 4. Run the application.
+5. Full documentation can be found here: https://devcamper-wsur.onrender.com/
 
 For detailed instructions and usage examples, consult the documentation provided in the HTML files.
 
