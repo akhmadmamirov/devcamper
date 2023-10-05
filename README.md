@@ -3,6 +3,8 @@
 This repository contains the backend API for the DevCamper project. The frontend/UI is currently under development. You can preview the HTML/CSS template at [https://devcamper-wsur.onrender.com/](https://devcamper-wsur.onrender.com/) to get an idea of the expected functionality.
 
 ## Overview
+<img width="433" alt="image" src="https://github.com/akhmadmamirov/DevCamper/assets/105142060/6d0388d6-1240-4613-8f58-63da31cc258b">
+
 
 This backend API fulfills the following requirements:
 
