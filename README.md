@@ -26,6 +26,9 @@ This backend API fulfills the following requirements:
   - Upload bootcamp photos (owner only).
   - Photos are stored locally.
 
+  <img width="396" alt="image" src="https://github.com/akhmadmamirov/DevCamper/assets/105142060/1b1688db-dd80-451c-b1df-6100cc47ab7d">
+
+
 ### Update and Delete Bootcamps
 
 - Update bootcamp details (owner only).
