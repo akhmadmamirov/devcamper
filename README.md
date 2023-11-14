@@ -64,6 +64,7 @@ This backend API fulfills the following requirements:
 - Delete reviews (owner only).
 
 ### Users & Authentication
+<img width="400" alt="image" src="https://github.com/akhmadmamirov/DevCamper/assets/105142060/459b9cfb-c7cc-4312-accd-d6fe2f71a36e">
 
 - Implement JWT/cookie-based authentication.
   - JWT and cookies expire in 30 days.
